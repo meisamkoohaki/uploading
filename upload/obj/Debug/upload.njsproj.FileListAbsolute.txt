@@ -1,0 +1,3 @@
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Execise\uploading\uploading\upload\obj\Debug\upload.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Execise\uploading\uploading\upload\obj\Debug\upload.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Execise\uploading\uploading\upload\bin\Microsoft.NodejsTools.WebRole.dll
