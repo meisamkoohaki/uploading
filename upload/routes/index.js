@@ -14,24 +14,24 @@ router.get('/', function (req, res) {
 
     if (method == "add") {
         result = x + y;
-        console.log(x + " + " + y + " = " + result);
-        message = x + " + " + y + " = " + result;
         funct = "Adding";
+        console.log(funct +": " + x + " + " + y + " = " + result);
+        message = x + " + " + y + " = " + result;
     } else if (method == "multiple") {
         result = x * y;
-        console.log(x + " * " + y + " = " + result);
-        message = x + " * " + y + " = " + result;
         funct = "Multipling";
+        console.log(funct + ": " + x + " * " + y + " = " + result);
+        message = x + " * " + y + " = " + result;
     } else if (method == "subtract") {
         result = x - y;
-        console.log(x + " - " + y + " = " + result);
-        message = x + " - " + y + " = " + result;
         funct = "Subtracting";
+        console.log(funct + ": " + x + " - " + y + " = " + result);
+        message = x + " - " + y + " = " + result;
     } else if (method == "divide") {
         result = x / y;
-        console.log(x + " / " + y + " = " + (Math.round(result * 100) / 100).toFixed(2));
-        message = x + " / " + y + " = " + (Math.round(result * 100) / 100).toFixed(2);
         funct = "Dividing";
+        console.log(funct + ": " + x + " / " + y + " = " + (Math.round(result * 100) / 100).toFixed(2));
+        message = x + " / " + y + " = " + (Math.round(result * 100) / 100).toFixed(2);
     } else if (method == "" || method) {
         console.log("Error -------------<< input meyhod is wrong!>>");
         message = "Error -------------<< input meyhod is wrong!>>";
@@ -39,10 +39,11 @@ router.get('/', function (req, res) {
     }
 
 
-    res.render('index', {
+    res.render('shoombool', {
         title: funct,
         message: message 
     });
+
 });
 
 module.exports = router;
